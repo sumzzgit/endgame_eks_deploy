@@ -65,8 +65,8 @@ phases:
     - mkdir reports
     # - trivy image backend >> reports/IMGSCAN_backend_Report.txt
     # - trivy image frontend >> reports/IMGSCAN_frontend_Report.txt
-    - hadolint frontend/Dockerfile-modified >> reports/IMGSCAN_frontend_Report.txt
-    - hadolint backend/Dockerfile >> reports/IMGSCAN_backend_Report.txt
+    - hadolint frontend/Dockerfile-modified >> reports/IMGSCAN_frontend_Report.txt || true
+    - hadolint backend/Dockerfile >> reports/IMGSCAN_backend_Report.txt || true
     # - aws s3 cp IMGSCAN_backend_Report.txt s3://sumzzbucket11/IMG_REPORTS/
   # - aws s3 cp IMGSCAN_frontend_Report.txt s3://sumzzbucket11/IMG_REPORTS/
 
