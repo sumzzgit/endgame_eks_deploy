@@ -102,7 +102,7 @@ phases:
     - cp manifests/serviceaccount.yml serviceaccount.yml
 
     # - echo "------ applying the manifest files dryrun ------"
-    - kube-linter lint manifests/ >> reports/k8s_reprt.txt
+    - kube-linter lint manifests/ 2>&1 reports/k8s_reprt.txt
     # - kubectl apply -f providerclass.yml --dry-run=client >> reports/k8s_reprt.txt
     # - kubectl apply -f serviceaccount.yml --dry-run=client >> reports/k8s_reprt.txt
     # - kubectl apply -f backend-deploy.yml --dry-run=client >> reports/k8s_reprt.txt
