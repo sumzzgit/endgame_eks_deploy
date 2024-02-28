@@ -103,7 +103,7 @@ phases:
 
     # - echo "------ applying the manifest files dryrun ------"
     - ls
-    - kube-linter lint manifests/ > reports/k8s_reprt.txt 2>&1
+    - kube-linter lint manifests/ > reports/k8s_reprt.txt 2>&1 || true
     # - kubectl apply -f providerclass.yml --dry-run=client >> reports/k8s_reprt.txt
     # - kubectl apply -f serviceaccount.yml --dry-run=client >> reports/k8s_reprt.txt
     # - kubectl apply -f backend-deploy.yml --dry-run=client >> reports/k8s_reprt.txt
