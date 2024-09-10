@@ -28,7 +28,7 @@ reference -> How do I resolve the "Your current user or role does not have acces
 https://repost.aws/knowledge-center/eks-kubernetes-object-access-error
 
 
--------
+--------
 to add the role to the cluster for the access ->
 edit the config present in kube-system namespace called "aws-auth"
 and these to the data
