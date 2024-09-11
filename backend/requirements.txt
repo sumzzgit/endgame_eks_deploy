@@ -2,3 +2,4 @@ flask
 # psycopg2-binary -> this is for the postgresql 
 mysql-connector-python #this is for the mysql db
 #werkzeug>=2.3.8 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
